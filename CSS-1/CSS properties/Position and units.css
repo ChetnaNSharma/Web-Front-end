@@ -1,0 +1,46 @@
+body{
+    font-size: 10px;
+}
+
+div{
+
+    font-size: 1em;
+    margin: 2em; 
+    padding: 2em;  
+    height: 12em;
+    width: 10em;
+    background-color: rgb(156, 20, 104);
+    border-radius: 1em;
+    color: white;
+    border: 0.01em black solid;
+    display: inline-block; 
+}
+
+#static .middle{
+    background-color: yellowgreen;
+    position:static;
+    top: 5em;
+}
+
+#relative .middle{
+    background-color: yellowgreen;
+    position:relative;
+     top: 8em; 
+     left: 11em;
+     
+}
+
+#absolute .middle{
+    background-color: yellowgreen;
+    position:absolute;
+     top: 200px;
+     left: 0px; 
+}
+
+#fixed .middle{
+    background-color: yellowgreen;
+    position:fixed;
+    top: 0px;
+    left: 0px;
+}
+
