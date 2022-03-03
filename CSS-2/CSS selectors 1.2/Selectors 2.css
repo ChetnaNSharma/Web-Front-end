@@ -1,0 +1,73 @@
+
+section{
+    background-color: rgb(183, 236, 245);
+} 
+
+section:nth-of-type(2n){
+    background-color: rgb(238, 197, 248);
+}
+
+footer{
+    background-color: rgba(211, 232, 238, 0.904);
+}
+
+.imp{
+    color:teal;
+}
+
+li a{
+    color:blue;
+}
+
+footer > a{
+    color: rgb(94, 94, 253);
+}
+
+input[type = "text"]{
+    background-color: rgb(245, 240, 240);
+    color: rgb(36, 35, 35);
+}
+
+label{
+    color: rgb(87, 86, 86);
+}
+
+::placeholder{
+    color: rgb(141, 138, 138);
+}
+
+span.imp:hover{
+    color: rgb(247, 17, 208);
+}
+
+footer>a:hover{
+    color:red;
+}
+
+section button:hover{
+    background-color: rgb(86, 86, 143);
+}
+button:hover{
+    background-color: darkgrey;
+}
+button:active{
+    background-color: rgb(4, 125, 141);
+}
+
+span a:hover{
+    transition-property: opacity, left, top, height;
+  transition-duration: 3s, 5s;
+}
+
+section button:active{
+    background-color: rgb(2, 2, 150);
+}
+
+
+h2::first-letter{
+    font-weight: 700;
+}
+
+h2{
+    font-weight: 300;
+}

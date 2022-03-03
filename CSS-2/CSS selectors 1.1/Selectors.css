@@ -1,0 +1,23 @@
+h2{
+    background-color:rgb(159, 199, 252);
+}
+
+section{
+    background-color: rgb(183, 236, 245);
+}
+
+footer{
+    background-color: rgba(211, 232, 238, 0.904);
+}
+
+.imp{
+    color:teal;
+}
+
+li a{
+    color:blue;
+}
+
+footer > a{
+    color: rgb(94, 94, 253);
+}
