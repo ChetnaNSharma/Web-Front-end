@@ -1,0 +1,148 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(38, 145, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh;
+}
+
+div{
+    background-color: rgb(252, 246, 223);
+    padding: 15px 25px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+ section img{
+
+    margin-bottom: 20px;
+    max-width: 100%;
+
+}
+
+section{
+    border-bottom: solid 1px rgb(175, 220, 250);
+}
+
+section:last-child{
+    border-bottom: none;
+}
+
+.head{
+    color: rgb(117, 116, 115);
+    letter-spacing: 1px;
+}
+
+.list{
+    margin: 30px 0 20px;
+    color: rgb(33, 103, 253);
+    letter-spacing: 1px;
+}
+
+.about{
+    border-top: solid 1px rgb(175, 220, 250);
+    padding: 10px 0 10px;
+}
+
+.list:last-child{
+    border-bottom: solid 1px rgb(175, 220, 250);
+}
+
+.price{
+    font-weight: 600;
+    font-size: 30px;
+    display: block;
+    color: rgb(33, 103, 253);
+}
+
+.price-button{
+    border: solid 1px rgb(33, 103, 253);
+    border-radius: 10px;
+    text-decoration:none;
+    color: rgb(33, 103, 253);
+    display: inline-block;
+    margin: 10px 0 10px;
+    padding: 8px 17px 8px; 
+    transition: all 0.01s ease-in-out;
+
+}
+
+.price-button:hover, .price-button:focus{
+    background-color: rgb(225, 236, 238);
+}
+
+#diff:hover, #diff:focus{
+    background-color: rgb(123, 165, 241);
+}
+
+@media(min-width:1000px){
+    div{
+        flex-direction: row;
+    }
+    section{
+        border-bottom: none;
+        border-right: solid 1px rgb(175, 220, 250);
+    }
+    section:last-child{
+        
+        border-right: none;
+    }
+} 
+
