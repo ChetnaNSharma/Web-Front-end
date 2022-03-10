@@ -5,9 +5,9 @@ while(input !== 'quit' && input !== 'q')
     if(input === 'list')
     {
         console.log('********************');
-        for(let i = 0; i < todos.length; i++)
+        for(let i = 0; i < toDo.length; i++)
         {
-            console.log{`${i}: ${todos[i]}`};
+            console.log{`${i}: ${toDo[i]}`};
         }
         console.log('********************');
     }
@@ -20,9 +20,22 @@ while(input !== 'quit' && input !== 'q')
     }
     else if(input === 'delete')
     {
-        let index = ('Enter index to delete')
+        let index = parseInt(prompt('Enter index to delete'));
+        if(!Number.isNaN(index))
+        {
+
+            let delete = toDo.splice(index,1);
+            console.log(`deleted ${delete[0]}`);
+        }
+        else
+        {
+            console.log('unknown index');
+
+        }
 
     }
 
-    console.log("You may quit!");
+    input = prompt('What is your plan today?');
 }
+
+console.log("You may quit!");
